@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+      @apply bg-gray-300;
+    }
+  }
+
+.btn-primary-sm{
+    @apply text-white px-4 rounded-lg py-1.5 border border-spacing-1
+     bg-green-600 border-blue-700 flex gap-3;
+}
+.btn-primary-lg{
+    @apply bg-white px-2 rounded-lg py-1 border border-spacing-1  border-blue-500 text-zinc-900;
+}
+.btn-pay{
+    @apply text-white px-2 rounded-lg py-2 font-semibold bg-zinc-900 w-full mt-5;
+}
+.btn-outline{
+    @apply px-5 rounded-md flex items-center py-0.5 text-white border border-spacing-1;
+}
+.btn-primary-outline{
+    @apply bg-transparent px-2 rounded-lg py-0.5 border border-spacing-1 border-zinc-900
+     text-zinc-950 font-semibold  md:w-auto w-full;
+}
+
+table.basic{
+    @apply w-full mt-10
+}
+table.basic th{
+    @apply text-left font-semibold text-xs uppercase text-gray-400 
+}
+table.basic tbody tr{
+    @apply border-t-2 border-solid
+}
+.productImgBox{
+    @apply md:max-h-48 md:max-w-48 md:h-48 md:w-48 w-32 h-32  rounded-lg border border-spacing-1 border-solid
+     border-gray-400
+     flex justify-center content-center items-center mt-2;
+}
+.btn-quantity{
+    @apply bg-gray-300 rounded-lg md:px-3 md:py-1 px-2 py-0.5 md:flex-none md:flex-row;
+}
+.styledInput{
+    @apply w-full p-2 mb-2 border border-spacing-1 rounded-lg border-solid border-gray-400
+}
+.center{
+    @apply flex flex-col mx-auto md:px-20 mt-10 px-8;
+}
+.form-box{
+    @apply bg-white font-semibold rounded-lg md:col-span-1 p-9;
+}
+.box{
+    @apply bg-white rounded-lg md:col-span-2 content-center items-center;
+}
+.box-font{
+    @apply text-4xl font-semibold font-sans;
+}
+.imageButton{
+    @apply md:max-h-48 md:max-w-48 md:h-24 md:w-24 flex justify-center content-center items-center cursor-pointer
+        border border-spacing-1 border-solid rounded-md;
+}
+.imagesButtons{
+    @apply gap-1 mt-4 justify-center;
+}
+.whiteBox{
+    @apply bg-white rounded-lg p-3;
+}
+.link{
+    @apply  text-white;
+}
+.productsShow{
+    @apply md:grid md:grid-cols-4 gap-7 pt-5 justify-center grid grid-cols-2;
+}
+img{
+    max-height: 100%;
+}
+.product-box{
+    @apply bg-white p-2 flex justify-center items-center rounded-lg h-56;
+}
